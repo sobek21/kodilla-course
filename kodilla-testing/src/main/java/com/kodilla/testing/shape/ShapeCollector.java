@@ -34,6 +34,15 @@ public class ShapeCollector {
         System.out.println(shapeCollection.toString());
     }
 }
+class Test {
+    public static void main(String[] args) {
+        ShapeCollector s = new ShapeCollector();
+        Circle circle = new Circle(4);
+
+
+
+    }
+}
 
 
 

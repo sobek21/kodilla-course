@@ -23,7 +23,7 @@ public class StatisticsCalculatorTest {
        when(statistics.postsCount()).thenReturn(0);
        when(statistics.commentsCount()).thenReturn(10);
        when(statistics.usersNames()).thenReturn(mack);
-       mock.calculateAdvStatistics(statistics);
+        mock.calculateAdvStatistics(statistics);
 //when then
         Assert.assertEquals(0,mock.averagePostUsers,0.1);
         Assert.assertEquals(10,mock.averageCommentsUsers,0);
@@ -47,7 +47,6 @@ public class StatisticsCalculatorTest {
         Assert.assertEquals(1000,mock.averagePostUsers,0.1);
         Assert.assertEquals(100,mock.averageCommentsUsers,1);
         Assert.assertEquals(0.1,mock.averageCommentsPost,0.5);
-
     }
     @Test
     public void calculateAdvStatistics3() {
@@ -137,8 +136,6 @@ public class StatisticsCalculatorTest {
             i++;
 
         }
-
-
         StatisticsCalculator mock = new StatisticsCalculator(statistics);
         when(statistics.postsCount()).thenReturn(1000);
         when(statistics.commentsCount()).thenReturn(10);
@@ -148,6 +145,5 @@ public class StatisticsCalculatorTest {
         Assert.assertEquals(10,mock.averagePostUsers,0.80);
         Assert.assertEquals(0.10,mock.averageCommentsUsers,0.80);
         Assert.assertEquals(0,mock.averageCommentsPost,1);
-
     }
 }
