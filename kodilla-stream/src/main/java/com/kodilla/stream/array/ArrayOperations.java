@@ -1,5 +1,7 @@
 package com.kodilla.stream.array;
 
+import java.time.LocalTime;
+import java.util.LinkedList;
 import java.util.stream.IntStream;
 
 public interface ArrayOperations {
@@ -17,3 +19,6 @@ public interface ArrayOperations {
        return average;
     }
 }
+
+
+
