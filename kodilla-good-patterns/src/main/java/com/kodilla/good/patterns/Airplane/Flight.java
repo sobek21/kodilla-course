@@ -40,4 +40,5 @@ public class Flight {
                 ", flightTo='" + flightTo + '\'' +
                 '}';
     }
+
 }
