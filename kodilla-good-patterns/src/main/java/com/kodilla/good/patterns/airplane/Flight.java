@@ -1,9 +1,9 @@
-package com.kodilla.good.patterns.Airplane;
+package com.kodilla.good.patterns.airplane;
 
 public class Flight {
 
-    String flightFrom;
-    String flightTo;
+    protected String flightFrom;
+    protected String flightTo;
 
     public Flight(String flightFrom, String flightTo) {
         this.flightFrom = flightFrom;
@@ -12,11 +12,9 @@ public class Flight {
     public String getFlightFrom() {
         return flightFrom;
     }
-
     public String getFlightTo() {
         return flightTo;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -40,5 +38,4 @@ public class Flight {
                 ", flightTo='" + flightTo + '\'' +
                 '}';
     }
-
 }

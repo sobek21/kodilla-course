@@ -1,19 +1,21 @@
-package com.kodilla.good.patterns.Airplane;
+package com.kodilla.good.patterns.airplane;
 
 public class Main {
+
     public static void main(String[] args) {
+
         FlightFinder flightFinder = new FlightFinder();
 
         System.out.println("ZAD1");
         try {
             flightFinder.flightFromCity("Warszawa");
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Airport doesn't exist");
         }
         System.out.println("ZAD2");
         try {
             flightFinder.flightToCity("Kraków");
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Airport doesn't exist");
         }
         System.out.println("ZAD3");

@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ForumUserTestSuite {
 
     @Test
-    void testGetUsername () {
+    public void testGetUsername () {
       //Given
         ApplicationContext context =
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
@@ -22,6 +22,5 @@ public class ForumUserTestSuite {
         String name = forumUser.getUsername();
       //Then
       Assert.assertEquals("John Smith",name);
-
     }
 }
